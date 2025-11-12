@@ -36,3 +36,4 @@ logs/
 
 # ADK specific
 /var/folders/
+my_agent_data.db

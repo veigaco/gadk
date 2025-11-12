@@ -22,8 +22,9 @@ LARGE_ORDER_THRESHOLD = 5
 
 
 def place_shipping_order(
-    num_containers: int, destination: str, tool_context: ToolContext
-) -> dict:
+    num_containers: int, 
+    destination: str, 
+    tool_context: ToolContext) -> dict:
     """Places a shipping order. Requires approval if ordering more than 5 containers (LARGE_ORDER_THRESHOLD).
 
     Args:
@@ -76,7 +77,6 @@ def place_shipping_order(
             "message": f"Order rejected: {num_containers} containers to {destination}",
         }
 
-
 print("✅ Long-running functions created!")
 
 
@@ -109,7 +109,6 @@ shipping_app = App(
 )
 
 print("✅ Resumable app created!")
-
 
 session_service = InMemorySessionService()
 
