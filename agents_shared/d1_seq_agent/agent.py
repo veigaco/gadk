@@ -3,8 +3,6 @@ sys.path.insert(0, '..')
 
 from agents_shared import Agent, SequentialAgent
 
-print("✅ ADK components imported successfully.")
-
 # Outline Agent: Creates the initial blog post outline.
 outline_agent = Agent(
     name="OutlineAgent",
